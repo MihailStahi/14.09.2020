@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of owl carousel</title>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="interface">
+<header>
+    <h1>
+     Simple and beauty interfadce
+    </h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Lorem ipsum dolor sit amet consectetur.</h2>
+</header>
+<div> 
+<div class="owl-carousel owl-theme ">
+    <div><img src="https://theme-land.com/sApp/demo/assets/img/screenshots/1.jpg" alt=""></div>
+    <div><img src="https://theme-land.com/sApp/demo/assets/img/screenshots/2.jpg" alt=""></div>
+    <div><img src="https://theme-land.com/sApp/demo/assets/img/screenshots/3.jpg" alt=""></div>
+    <div><img src="https://theme-land.com/sApp/demo/assets/img/screenshots/4.jpg" alt=""></div>
+    <div><img src="https://theme-land.com/sApp/demo/assets/img/screenshots/5.jpg" alt=""></div>
+
+</div>
+
+</div>
+    </section>
+<div class="mobile-mock">
+  
+    <div class="screen"></div>
+    <div class="circle">
+       
+    </div>
+
+</div>
+<div class="promo-icon">
+    <i class="icon-mobile"></i>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous">
+    </script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+  $(".owl-carousel").owlCarousel(  {
+
+  loop:true,
+  dots:true,
+  margin: 10,
+  center:true,
+  responsive:{
+      0:{ 
+      items:1
+  },
+  640:{
+      items:3 
+  },
+  1200:{
+      items:5,
+      nav:true
+  }
+}
+  });
+
+});
+    </script>
+</body>
+</html> 
